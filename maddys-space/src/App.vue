@@ -17,7 +17,6 @@ import Home from './components/Home.vue'
     </header>
     <div class="page">
       <div class="box">
-        <
       <RouterView class="import"/>
       </div>
     </div>
