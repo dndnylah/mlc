@@ -20,14 +20,13 @@ import greenstar from '@/components/icons/greenstar.vue';
   flex-direction: row;
 }
 .text{
-  font-family: "DynaPuff", sans-serif;
+  font-family: "Bitcount Grid Double", sans-serif;
   color: black;
   display: flex;
   position: relative;
   font-weight: 600;
-  font-style: italic;
   font-size: 50px;
-  text-shadow: -4px 2px 0px silver;
+  text-shadow: 4px 4px 0px silver;
 }
 .star{
   width: 175px;
