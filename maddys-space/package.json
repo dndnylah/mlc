@@ -12,6 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://dndnylah.github.io/mlc/",
   "dependencies": {
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
