@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/mlc/",
+  base: "../mlc/maddys-space",
   plugins: [
     vue(),
     vueDevTools(),
