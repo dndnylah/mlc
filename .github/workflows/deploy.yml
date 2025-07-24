@@ -19,14 +19,14 @@ jobs:
       
       - name: Install Dependencies 📦
         run: npm install
-        working-directory: mlc/maddys-space    # <--- add this line
+        working-directory: ../mlc/maddys-space    # <--- add this line
       
       - name: Build ⚒️
         run: npm run build
-        working-directory: mlc/maddys-space    # <--- add this line
+        working-directory: ../mlc/maddys-space    # <--- add this line
       
       - name: Deploy to gh-pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: mlc/maddys-space/dist    # <--- update this path if your build output is inside the subfolder
+          publish_dir: ../mlc/maddys-space/dist    # <--- update this path if your build output is inside the subfolder
