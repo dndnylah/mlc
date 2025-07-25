@@ -7,7 +7,7 @@ const movie = ref(null)
 
 onMounted(async () => {
   try {
-    const response = await fetch('https://max-movie-7fxgkeh3r-nylahs-projects.vercel.app/api/movies')
+    const response = await fetch('https://max-movie-nine.vercel.app/api/movies')
     const data = await response.json()
 
     if (Array.isArray(data) && data.length > 0) {
