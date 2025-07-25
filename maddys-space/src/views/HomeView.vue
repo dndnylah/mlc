@@ -25,7 +25,7 @@ import greenstar from '@/components/icons/greenstar.vue';
   display: flex;
   position: relative;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 4vw;
   text-shadow: 4px 4px 0px silver;
 }
 .star{

@@ -15,7 +15,7 @@ import Home from './components/Home.vue'
         </nav>
       </div>
     </header>
-    <div class="page">
+    <div class="wrapper">
       <div class="box">
       <RouterView class="import"/>
       </div>
@@ -56,23 +56,19 @@ import Home from './components/Home.vue'
   box-shadow: 0px 0px 1px 3px white;
 
 }
-.page{
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
 .app-wrap{
   width: 150vh;
   height: auto;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 .wrapper{
   width: 100%;
   justify-content: center;
   align-items: center;
+  display: flex;
+  position: relative;
 }
 .navbar{
   display: flex;
@@ -89,7 +85,8 @@ import Home from './components/Home.vue'
 
 .button{
   font-family: Bitcount Grid Double, sans-serif;
-  width: 200px;
+  max-width: 200px;
+  width: 20vw;
   height: 50px;
   border-radius: 50px;
   box-shadow: 4px 4px 0px white;
