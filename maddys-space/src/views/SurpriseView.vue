@@ -35,7 +35,7 @@ onMounted(async () => {
         <p><strong>Status:</strong> {{ movie.status }}</p>
       </div>
       <div v-else>
-        <p>Loading surprise...</p>
+        <p class="random-gen">Loading surprise...</p>
       </div>
     <Surprise />
   </div>
