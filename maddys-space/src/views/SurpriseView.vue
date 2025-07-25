@@ -44,7 +44,7 @@ onMounted(async () => {
 
 <style>
 .smiski{
-  width: 200px;
+  width: 15vw;
   display: flex;
 }
 .wrapper{
