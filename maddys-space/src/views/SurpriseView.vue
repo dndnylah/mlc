@@ -55,6 +55,6 @@ onMounted(async () => {
 .random-gen{
   font-family: Bitcount Grid Double, sans-serif;
   color: black;
-  font-size: 3vw;
+  font-size: 1vw;
 }
 </style>
