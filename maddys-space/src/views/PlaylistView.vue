@@ -13,7 +13,7 @@ import w2e1 from '@/components/icons/w2e1.vue';
 
 <style>
 .cat{
-    width: 200px;
+    width: 15vw;
     display: flex;
 }
 </style>

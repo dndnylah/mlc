@@ -41,7 +41,7 @@ import Home from './components/Home.vue'
   z-index: 1;
 }
 .box{
-  width: 70%;
+  width: 80vw;
   height: 70%;
   border-radius: 30px;
   background-color: white;
@@ -51,7 +51,7 @@ import Home from './components/Home.vue'
   position: fixed;
   z-index: 0;
   top: 20%;
-  left: 15%;
+  left: 10%;
   border: 10px double black;
   box-shadow: 0px 0px 1px 3px white;
 
@@ -75,7 +75,7 @@ import Home from './components/Home.vue'
   flex-direction: row;
   gap: 10px;
   position: fixed;
-  top: 20px;
+  top: 25px;
   left: 0;
   width: 100%;
   margin-top: 20px;
@@ -87,7 +87,7 @@ import Home from './components/Home.vue'
   font-family: Bitcount Grid Double, sans-serif;
   max-width: 200px;
   width: 20vw;
-  height: 50px;
+  height: 60px;
   border-radius: 50px;
   box-shadow: 4px 4px 0px white;
   animation: float 3s ease-in-out 5s infinite alternate;

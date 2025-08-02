@@ -11,7 +11,7 @@ import Letters from '../components/Letters.vue'
 </template>
 <style>
 .miffy{
-    width: 200px;
+    width: 15vw;
     display: flex;
 }
 </style>

@@ -4,11 +4,9 @@ import greenstar from '@/components/icons/greenstar.vue';
 </script>
 
 <template>
+  <Home class="home"/>
   <main class="wrapper">
-    <h1 class="text">Welcome</h1>
     <greenstar class="star" />
-    <h1 class="text">Madison <3</h1>
-    <Home />
   </main>
 </template>
 
@@ -17,18 +15,17 @@ import greenstar from '@/components/icons/greenstar.vue';
 
 .wrapper{
   display: flex;
-  flex-direction: row;
-}
-.text{
-  font-family: "Bitcount Grid Double", sans-serif;
-  color: black;
-  display: flex;
-  position: relative;
-  font-weight: 600;
-  font-size: 4vw;
-  text-shadow: 4px 4px 0px silver;
+  justify-content: right;
+  position: absolute;
 }
 .star{
-  width: 175px;
+  width: 15vw;
+  z-index: 0;
+  position: relative;
+}
+.home{
+  z-index: 1;
+  display: flex;
+  position: absolute;
 }
 </style>
