@@ -1,6 +1,7 @@
 <script setup>
 import Surprise from '../components/Surprise.vue'
 import smiskicheer from '@/components/icons/smiskicheer.vue';
+import bluejellybg from '@/components/icons/bluejellybg.vue';
 import { ref, onMounted } from 'vue'
 
 const movie = ref(null)
@@ -38,6 +39,7 @@ onMounted(async () => {
         <p class="random-gen">Loading surprise...</p>
       </div>
     <Surprise />
+    
   </div>
   </main>
 </template>
@@ -53,10 +55,15 @@ onMounted(async () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 0;
+  background-image: url('@/src/assets/bluejelly.jpg');
+  background-size: cover; /* or other values like 'contain', '100% 100%' */
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .random-gen{
   font-family: Bitcount Grid Double, sans-serif;
   color: black;
-  font-size: 1vw;
+  font-size: 2vw;
 }
 </style>

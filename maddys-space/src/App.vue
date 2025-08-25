@@ -1,10 +1,12 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import Home from './components/Home.vue'
+import bg from './components/icons/bg.vue';
 </script>
 
 <template>
   <div class="app-wrap">
+    <bg class="bg"/>
     <header>
       <div class="wrapper">
         <nav class="navbar">
@@ -26,6 +28,7 @@ import Home from './components/Home.vue'
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
 
+
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -37,8 +40,14 @@ import Home from './components/Home.vue'
     transform: translateY(0px);
   }
 }
+.bg{
+  display: flex;
+  position: fixed;
+  width: 135%;
+  height: 135%;
+}
 .import{
-  z-index: 1;
+  z-index: 0;
 }
 .box{
   width: 80vw;
@@ -54,6 +63,7 @@ import Home from './components/Home.vue'
   left: 10%;
   border: 10px double black;
   box-shadow: 0px 0px 1px 3px white;
+  overflow: hidden;
 
 }
 .app-wrap{
@@ -89,7 +99,7 @@ import Home from './components/Home.vue'
   width: 20vw;
   height: 60px;
   border-radius: 50px;
-  box-shadow: 4px 4px 0px white;
+  box-shadow: 4px 4px 0px #23361b;
   animation: float 3s ease-in-out 5s infinite alternate;
 }
 .delay1 { animation-delay: 0s; }
