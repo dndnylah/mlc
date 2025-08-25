@@ -46,10 +46,12 @@ onMounted(async () => {
 .smiski{
   width: 15vw;
   display: flex;
+  position: fixed;
+  left: 35vw;
 }
 .wrapper{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .random-gen{
