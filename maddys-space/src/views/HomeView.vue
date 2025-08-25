@@ -15,17 +15,20 @@ import greenstar from '@/components/icons/greenstar.vue';
 
 .wrapper{
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   position: absolute;
 }
 .star{
   width: 15vw;
   z-index: 0;
-  position: relative;
+  position: fixed;
+  top: 10vw;
+  left: 25vw;
 }
 .home{
   z-index: 1;
   display: flex;
-  position: absolute;
+  position: fixed;
+  left: 35vw;
 }
 </style>
