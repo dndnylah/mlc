@@ -56,7 +56,7 @@ onMounted(async () => {
   justify-content: space-between;
   align-items: center;
   z-index: 0;
-  background-image: url('@/src/assets/bluejelly.jpg');
+  background-image: url('maddys-space/src/assets/bluejelly.jpg');
   background-size: cover; /* or other values like 'contain', '100% 100%' */
   background-repeat: no-repeat;
   background-position: center center;
