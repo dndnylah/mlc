@@ -48,6 +48,14 @@ import { RouterLink, RouterView } from 'vue-router'
     transform: rotate(-360deg);
   }
 }
+@keyframes slide{
+  0% {
+    transform: translateX(0px);
+  }
+  60%{
+    transform: translateX(-50px);
+  }
+}
 .cover1{
   width: 60%;
   height: 80%;
@@ -100,21 +108,13 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: space-between;
   margin-top: 15vh;
 }
-.jelly, .miffy {
-  width: 200%;
-  height: auto;
-  display: flex;
-  position: relative;
-  animation: spin 20s linear infinite;
-}
-.green {
+.green, .jelly, .miffy{
   width: 200%;
   height: auto;
   display: flex;
   animation: counterspin 20s linear infinite;
 }
 .zoom:hover{
-  transform: scale(1.2);
-  z-index: 2;
+  animation: slide 2s linear 1;
 }
 </style>
