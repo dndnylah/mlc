@@ -1,4 +1,6 @@
 import './assets/main.css'
+import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
+import 'vue-lite-youtube-embed/style.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'

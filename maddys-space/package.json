@@ -15,6 +15,7 @@
   "homepage": "https://dndnylah.github.io/mlc/",
   "dependencies": {
     "vue": "^3.5.17",
+    "vue-lite-youtube-embed": "^1.2.4",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {

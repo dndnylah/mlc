@@ -48,18 +48,13 @@ onMounted(async () => {
 .smiski{
   width: 15vw;
   display: flex;
-  position: fixed;
-  left: 35vw;
+  position: relative;
 }
 .wrapper{
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 0;
-  background-image: url('maddys-space/src/assets/bluejelly.jpg');
-  background-size: cover; /* or other values like 'contain', '100% 100%' */
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .random-gen{
   font-family: Bitcount Grid Double, sans-serif;
