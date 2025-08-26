@@ -13,9 +13,18 @@ import { RouterLink, RouterView } from 'vue-router'
     <greenstar class="star" />
     <greenstar class="star2" />
     <div class="disks">
-      <router-link class="router" :to="{path: '/Playlist'}"><diskjelly class="jelly zoom" /></router-link>
-      <router-link class="router" :to="{path: '/Letters'}"><greenbg class="green zoom" /></router-link>
-      <router-link class="router" :to="{path: '/Surprise'}"><miffybg class="miffy zoom" /></router-link>
+      <router-link class="router" :to="{path: '/Playlist'}">
+        <diskjelly class="jelly zoom" />
+        <img class="cover1" src="../assets/wallows.png" />
+      </router-link>
+      <router-link class="router" :to="{path: '/Letters'}">
+        <greenbg class="green zoom" />
+        <img class="cover1" src="../assets/kingkrule.png" />
+      </router-link>
+      <router-link class="router" :to="{path: '/Surprise'}">
+        <miffybg class="miffy zoom" />
+        <img class="cover1" src="../assets/dpr.png" />
+      </router-link>
     </div>
   </main>
 </template>
@@ -38,6 +47,16 @@ import { RouterLink, RouterView } from 'vue-router'
   100% {
     transform: rotate(-360deg);
   }
+}
+.cover1{
+  width: 60%;
+  height: 80%;
+  position: relative;
+  z-index: 0;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+
 }
 .wrapper {
   display: flex;
@@ -96,5 +115,6 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 .zoom:hover{
   transform: scale(1.2);
+  z-index: 2;
 }
 </style>
