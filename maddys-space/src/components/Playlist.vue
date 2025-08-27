@@ -11,7 +11,7 @@
 .spot {
   max-width: 100%;
   color: blue;
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  z-index: 1;
 }
 </style>

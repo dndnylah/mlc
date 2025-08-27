@@ -115,6 +115,6 @@ import { RouterLink, RouterView } from 'vue-router'
   animation: counterspin 20s linear infinite;
 }
 .zoom:hover{
-  animation: slide 2s linear 1;
+  animation: slide 1.5s linear 1;
 }
 </style>
