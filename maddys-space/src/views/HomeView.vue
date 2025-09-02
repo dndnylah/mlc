@@ -9,7 +9,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <Home class="home" />
+  <img class="cover2" src="../assets/greenland.png" />
   <main class="wrapper">
+    
     <greenstar class="star" />
     <greenstar class="star2" />
     <div class="disks">
@@ -55,6 +57,15 @@ import { RouterLink, RouterView } from 'vue-router'
   60%{
     transform: translateX(-50px);
   }
+}
+.cover2{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* fills button */
+    z-index: -1;
 }
 .cover1{
   width: 60%;
