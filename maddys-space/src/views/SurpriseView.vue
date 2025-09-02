@@ -29,6 +29,7 @@ onMounted(async () => {
   <main>
     <div class="wrapper">
       <smiskicheer class="smiski"/>
+      <img class="cover1" src="../assets/strwbryplaid.png" />
       <div class="random-gen" v-if="movie">
         <h2>🎬 {{ movie.title }}</h2>
         <p><strong>Type:</strong> {{ movie.type }}</p>
@@ -45,6 +46,15 @@ onMounted(async () => {
 </template>
 
 <style>
+.cover1{
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* fills button */
+    z-index: -1;
+}
 .smiski{
   width: 15vw;
   display: flex;

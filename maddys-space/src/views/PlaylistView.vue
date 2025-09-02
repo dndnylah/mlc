@@ -7,7 +7,7 @@ import w2e1 from '@/components/icons/w2e1.vue';
 <template>
   <main>
     <div class="wrapper">
-      <img class="cover1" src="../assets/playlistbg.png" />
+      <img class="cover1" src="../assets/junio.png" />
       <dancingcat class="cat" />
       <Playlist class="play"/>
     </div>
