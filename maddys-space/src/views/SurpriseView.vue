@@ -39,6 +39,9 @@ onMounted(async () => {
       <div v-else>
         <p class="random-gen">Loading surprise...</p>
       </div>
+      <div class="wrapper">
+        <button @click="location.reload()">Generate New Surprise</button>
+      </div>
     <Surprise />
     
   </div>
