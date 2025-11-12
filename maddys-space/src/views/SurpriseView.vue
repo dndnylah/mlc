@@ -23,24 +23,9 @@ onMounted(async () => {
     console.error('Failed to fetch movie:', error)
   }
 })
-
-onClicked(() => {
-  try {
-    const response = fetch('https://max-movie-nine.vercel.app/api/movies')
-    const data = response.json()
-
-    if (Array.isArray(data) && data.length > 0) {
-      // Filter for unwatched movies
-      const unwatched = data.filter(m => m.status === 'unwatched')
-      // Pick one at random
-      movie.value = unwatched[Math.floor(Math.random() * unwatched.length)]
-    } else {
-      console.error('No movies found')
-    }
-  } catch (error) {
-    console.error('Failed to fetch movie:', error)
-  }
-})
+function onClicked() {
+  location.reload();
+}
 </script>
 
 <template>
