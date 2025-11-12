@@ -23,6 +23,11 @@ onMounted(async () => {
     console.error('Failed to fetch movie:', error)
   }
 })
+
+onClicked(() => {
+  // Re-run the onMounted logic to fetch a new movie
+  onMounted()
+})
 </script>
 
 <template>
@@ -40,7 +45,7 @@ onMounted(async () => {
         <p class="random-gen">Loading surprise...</p>
       </div>
       <div class="but">
-        <button @click="location.onMounted()">Generate New Surprise</button>
+        <button @click="onClicked()">Generate New Surprise</button>
       </div>
     <Surprise />
     
