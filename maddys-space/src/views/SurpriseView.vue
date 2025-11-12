@@ -60,9 +60,6 @@ function onClicked() {
       <div v-else>
         <p class="random-gen">Loading surprise...</p>
       </div>
-      <div class="but">
-        <button @click="onClicked()">Generate New Surprise</button>
-      </div>
     <Surprise />
     
   </div>
