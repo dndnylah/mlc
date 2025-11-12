@@ -32,7 +32,7 @@ onMounted(async () => {
       <img class="cover1" src="../assets/strwbryplaid.png" />
       <div class="random-gen" v-if="movie">
         <h2>🎬 {{ movie.title }}</h2>
-        <p><strong>Type:</strong> {{ movie.type }}</p>
+        <p><strong>Type:</strong> {{ movie.form }}</p>
         <p><strong>Platform:</strong> {{ movie.platform }}</p>
         <p><strong>Status:</strong> {{ movie.status }}</p>
       </div>
