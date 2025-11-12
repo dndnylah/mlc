@@ -24,7 +24,9 @@ onMounted(async () => {
   }
 })
 function onClicked() {
-  location.reload();
+  movie.value = null; // Reset movie to show loading state
+  // Re-fetch a new movie
+  onMounted();
 }
 </script>
 
