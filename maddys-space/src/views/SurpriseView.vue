@@ -39,8 +39,8 @@ onMounted(async () => {
       <div v-else>
         <p class="random-gen">Loading surprise...</p>
       </div>
-      <div class="wrapper">
-        <button @click="location.reload()">Generate New Surprise</button>
+      <div class="but">
+        <button @click="location.onMounted()">Generate New Surprise</button>
       </div>
     <Surprise />
     
@@ -49,6 +49,13 @@ onMounted(async () => {
 </template>
 
 <style>
+.but{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  right: 50vb;
+  top: 40vh;
+}
 .cover1{
      position: absolute;
     top: 0;
